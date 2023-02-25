@@ -1,3 +1,24 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a {
+  font-weight: 600;
+  padding-right: 10px;
+}
+
+nav a:hover {
+  color: beige;
+
+}
+
+
 .mean {
   background-color: rgb(153, 218, 242);
   display: flex;
@@ -7,6 +28,41 @@
   justify-content: center;
   height: 100vh;
 
+}
+
+
+header {
+  display: flex;
+  height: 70px;
+  background-color: rgb(68, 110, 110);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  padding: 0%;
+  margin: 0;
+  color: rgb(9, 40, 40);
+  display: flex;
+  align-items: center;
+  background-color: rgb(211, 211, 247);
+  border-radius: 50%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+  font-size: 15px;
+
+}
+
+.logo h2 {
+  margin: 10px;
+  margin-bottom: 1px;
+}
+
+.logo h6 {
+  margin: 4px 0px;
 }
 
 section {
@@ -20,11 +76,8 @@ section div {
   align-items: center;
   background-color: rgb(95, 225, 225);
   width: 33%;
-
   justify-content: center;
   border-radius: 3px;
-
-
 }
 
 p {
@@ -32,7 +85,7 @@ p {
   flex-direction: column;
   align-items: center;
   background-color: rgb(138, 199, 199);
-  width: 33%;
+  width: 90%;
 
   justify-content: center;
   border-radius: 10px;
@@ -41,13 +94,15 @@ p {
 }
 
 #title {
-height: 20%;
-text-justify: kashida;
- font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- font-size: 400%;
- box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
- 
+  height: 20%;
+  text-justify: kashida;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 400%;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  animation-name: changeColor;
+  animation-duration: 1s;
 }
+
 
 
 
@@ -63,7 +118,7 @@ text-justify: kashida;
   color: rgba(0, 0, 0, 0.85);
   cursor: pointer;
   display: inline-flex;
-  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: 600;
   justify-content: center;
@@ -98,4 +153,85 @@ text-justify: kashida;
   box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
   color: rgba(0, 0, 0, 0.65);
   transform: translateY(0);
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: rgb(95, 225, 225);
+    transform: scale(1.2);
+    font-size: 400%;
+  }
+
+  50% {
+
+    background-color: rgb(118, 202, 210);
+    transform: scale(1.5);
+    font-size: 100%;
+  }
+
+  80% {
+    background-color: aquamarine;
+    transform: scale(2);
+    font-size: 400%;
+  }
+
+}
+
+@media (max-width:700px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 0;
+    height: 105px;
+
+  }
+
+  .logo {
+    margin-top: 30px;
+  }
+
+  nav {
+    padding: 10px 0px;
+  }
+
+  #title {
+
+    font-size: 200%;
+
+  }
+
+  p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(138, 199, 199);
+    width: 90%;
+  
+    justify-content: center;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: rgba(84, 113, 211, 0.04) 0 1px 3px 0;
+  }
+
+  @keyframes changeColor {
+    0% {
+      background-color: rgb(95, 225, 225);
+      transform: scale(1.2);
+      font-size: 400%;
+    }
+
+    50% {
+
+      background-color: rgb(118, 202, 210);
+      transform: scale(1.5);
+      font-size: 100%;
+    }
+
+    80% {
+      background-color: aquamarine;
+      transform: scale(2);
+      font-size: 400%;
+    }
+
+  }
 }
