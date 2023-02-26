@@ -22,13 +22,13 @@ nav a:hover {
 .mean {
   background-color: rgb(153, 218, 242);
   display: flex;
-
   flex-direction: column;
   margin: auto 0;
   justify-content: center;
-  height: 100vh;
-
+  height: 100vh
 }
+
+
 
 
 header {
@@ -65,6 +65,13 @@ header {
   margin: 4px 0px;
 }
 
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+
 section {
   display: flex;
   justify-content: center;
@@ -85,10 +92,8 @@ p {
   flex-direction: column;
   align-items: center;
   background-color: rgb(138, 199, 199);
-  width: 90%;
-
+  width: 100%;
   justify-content: center;
-  border-radius: 10px;
   text-align: center;
   box-shadow: rgba(84, 113, 211, 0.04) 0 1px 3px 0;
 }
@@ -107,7 +112,6 @@ p {
 
 
 
-/* CSS */
 .button-6 {
   align-items: center;
   background-color: #FFFFFF;
@@ -123,7 +127,7 @@ p {
   font-weight: 600;
   justify-content: center;
   line-height: 1.25;
-  margin: 0;
+  margin: 3px 3%  ;
   min-height: 3rem;
   padding: calc(.875rem - 1px) calc(1.5rem - 1px);
   position: relative;
@@ -133,7 +137,7 @@ p {
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: baseline;
-  width: auto;
+  width: 90%;
 }
 
 .button-6:hover,
@@ -177,7 +181,68 @@ p {
 
 }
 
+
+.GamesList {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+
+  font-size: 30px;
+  background-color: rgba(0, 0, 139, 0.263);
+  animation-name: GamesList;
+  animation-duration: 2s;
+}
+
+@keyframes GamesList {
+  0% {
+    padding: 30%;
+    background-color: rgb(240, 255, 244);
+   
+  }
+
+  25% {
+    padding: 20%;
+    background-color: rgb(240, 244, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  50% {
+    background-color: rgb(240, 246, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  80% {
+    
+    border-radius: 100%;
+    padding: 10%;
+    background-color: rgb(240, 243, 255);
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+}
+
+
+
 @media (max-width:700px) {
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .mean {
+    background-color: rgb(153, 218, 242);
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    justify-content: center;
+    height: 100vh;
+
+  }
+
   header {
     flex-direction: column;
     justify-content: center;
@@ -187,7 +252,20 @@ p {
   }
 
   .logo {
-    margin-top: 30px;
+    margin-top: 2px;
+    animation-name: logoAnimation;
+    animation-duration: 2s;
+    position: relative;
+  }
+
+  @keyframes logoAnimation {
+    0% {
+      background-color: rgb(242, 153, 156, 0.295);
+    }
+
+    50% {
+      background-color: rgba(0, 0, 255, 0.295);
+    }
   }
 
   nav {
@@ -200,17 +278,54 @@ p {
 
   }
 
+
   p {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(138, 199, 199);
     width: 90%;
-  
     justify-content: center;
     border-radius: 10px;
     text-align: center;
     box-shadow: rgba(84, 113, 211, 0.04) 0 1px 3px 0;
+  }
+
+  .GamesList {
+    font-size: 30px;
+   
+    padding: 10%;
+    margin-bottom: 40px;
+    animation-name: GamesList;
+    animation-duration: 2s;
+  }
+
+  @keyframes GamesList {
+    0% {
+      padding: 30%;
+      background-color: rgb(240, 255, 244);
+     
+    }
+
+    25% {
+      padding: 20%;
+      background-color: rgb(240, 244, 255);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    50% {
+      background-color: rgb(240, 246, 255);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    80% {
+    
+      padding: 10%;
+      background-color: rgb(240, 243, 255);
+      font-size: large;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
   }
 
   @keyframes changeColor {

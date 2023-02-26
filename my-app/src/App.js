@@ -1,7 +1,7 @@
 
 import './App.css';
 
-import { ExcuseGame } from './components/excuse'
+import { MenuGame } from './components/menuGames'
 
 
 
@@ -21,8 +21,8 @@ function App() {
         </nav>
       </header>
 
-
-      <ExcuseGame></ExcuseGame>
+<MenuGame></MenuGame>
+   
 
     </div>
   );
