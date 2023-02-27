@@ -1,12 +1,11 @@
 import "./App.css";
-import { Header } from "./components/pure/header";
-import { MenuGame } from "./components/menuGames";
+import { ComponentWithContext } from "./components/prueba";
+
 
 function App() {
   return (
     <div>
-      <Header></Header>
-      <MenuGame></MenuGame>
+<ComponentWithContext></ComponentWithContext>
     </div>
   );
 }
