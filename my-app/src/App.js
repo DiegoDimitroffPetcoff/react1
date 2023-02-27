@@ -3,12 +3,7 @@ import './App.css';
 
 import { MenuGame } from './components/menuGames'
 
-
-
 function App() {
-
-
-
   return (
     <div>
       <header>
@@ -21,8 +16,8 @@ function App() {
         </nav>
       </header>
 
-<MenuGame></MenuGame>
-   
+      <MenuGame></MenuGame>
+
 
     </div>
   );
