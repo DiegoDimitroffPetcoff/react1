@@ -252,7 +252,7 @@ p {
     flex-direction: column;
     margin: auto 0;
     justify-content: center;
-    height: 600px;
+    height: 550px;
 
   }
 
@@ -291,9 +291,7 @@ p {
   }
 
   #title {
-
     font-size: 200%;
-
   }
   .backTitle{
     background-color: rgb(0 0 0 / 10%);
@@ -369,5 +367,26 @@ p {
     
     }
 
+
+
+  
+  
+
+
+
+  }
+  /** How old is your sould responsive*/
+    
+  .mainHowOld { 
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(0 0 0 / 15%);
+    align-items: center;
+    margin: auto 0
+  }
+  input{
+    height: 50px;
+    width: 80%;
+    font-size: 30px;
   }
 }
