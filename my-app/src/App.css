@@ -252,7 +252,7 @@ p {
     flex-direction: column;
     margin: auto 0;
     justify-content: center;
-    height: 680px;
+    height: 669px;
 
   }
 
@@ -266,7 +266,7 @@ p {
 
   footer{
     height: 30px;
-    font-size: 10px;
+    font-size: 8px;
   }
 
   .logo {

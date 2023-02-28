@@ -3,7 +3,11 @@ import { useState } from "react";
 export function ExcuseGame() {
 
     const excuses = [
-        "I have not money!", "I am feeling a litle sick", "I lost my cellphone!", "I think I'm pregnant!!", "I got an emergency at the bathroom !"
+        "I have not money!", "I am feeling a litle sick", "I lost my cellphone!", "I got an emergency at the bathroom !","I have farts!"
+    ]
+
+    const excusesFamily = [
+        "I want to join another family!", "I just found out I'm adopted!", "Grandma stinks!", "I think I'm pregnant!!", "I got an emergency at the bathroom !"
     ]
 
     const ramdon = (array) => {
@@ -22,7 +26,7 @@ export function ExcuseGame() {
         setParty(result)
     }
     const familyMeetingExcuse = () => {
-        let result = ramdon(excuses)
+        let result = ramdon(excusesFamily)
         setfamilyMeeting(result)
     }
 
