@@ -7,10 +7,11 @@ export function AgeGame() {
 
   const fetchData = () => {
     Axios.get(`https://api.agify.io/?name=${name}`).then((res) => {
-      console.log(res.data);
-      console.log(res.data.age);
+   let name = res.data.name 
+   let age = res.data.age
+Text = <h1 class="ageMessage">Ey {name} your soul age is {age}!!</h1>
 
-      setAge(res.data.name + "`s sould has " + res.data.age);
+      setAge(Text);
     });
   };
 
@@ -25,10 +26,10 @@ export function AgeGame() {
       />
       <br></br>
 
-      <button onClick={fetchData}>Predict Age</button>
+    
+      <button class="button-85" role="button" onClick={fetchData}>Check it!</button>
 
-      <h1>Predicted Age is {name} </h1>
-      {age}
+      <h1>{age}</h1>
     </div>
   );
 }
