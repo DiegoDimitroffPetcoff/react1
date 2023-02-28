@@ -1,6 +1,7 @@
 body {
   font-family: sans-serif;
   margin: 0;
+  
 }
 
 a {
@@ -87,6 +88,17 @@ section div {
   border-radius: 3px;
 }
 
+footer {
+  color: white;
+  display: flex;
+  height: 40px;
+  background-color: rgb(0, 0, 0);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 13px;
+}
+
 p {
   display: flex;
   flex-direction: column;
@@ -99,7 +111,7 @@ p {
 }
 
 #title {
-  height: 20%;
+  
   text-justify: kashida;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 400%;
@@ -251,6 +263,11 @@ p {
 
   }
 
+  footer{
+    height: 30px;
+    font-size: 10px;
+  }
+
   .logo {
     margin-top: 2px;
     animation-name: logoAnimation;
@@ -269,13 +286,18 @@ p {
   }
 
   nav {
-    padding: 10px 0px;
+    padding-top: 20px;
   }
 
   #title {
 
     font-size: 200%;
 
+  }
+  .backTitle{
+    background-color: rgb(0 0 0 / 10%);
+    border-radius: 100%;
+    padding-bottom: 30px;
   }
 
 
@@ -297,18 +319,18 @@ p {
     padding: 10%;
     margin-bottom: 40px;
     animation-name: GamesList;
-    animation-duration: 2s;
+    animation-duration: 1s;
   }
 
   @keyframes GamesList {
     0% {
-      padding: 30%;
+      padding: 20%;
       background-color: rgb(240, 255, 244);
      
     }
 
     25% {
-      padding: 20%;
+      padding: 10%;
       background-color: rgb(240, 244, 255);
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
@@ -331,12 +353,10 @@ p {
   @keyframes changeColor {
     0% {
       background-color: rgb(95, 225, 225);
-      transform: scale(1.2);
-      font-size: 400%;
+      transform: scale(1.2);      
     }
 
     50% {
-
       background-color: rgb(118, 202, 210);
       transform: scale(1.5);
       font-size: 100%;
@@ -344,8 +364,8 @@ p {
 
     80% {
       background-color: aquamarine;
-      transform: scale(2);
-      font-size: 400%;
+      transform: scale(1);
+    
     }
 
   }

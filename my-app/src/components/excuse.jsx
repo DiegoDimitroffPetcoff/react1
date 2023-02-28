@@ -34,7 +34,7 @@ export function ExcuseGame() {
 
     return (
         <div class="mean">
-            <section id="title">Dont you wanna go?</section>
+            <section id="title" class="backTitle">Dont you wanna go?</section>
             <section>
                 <div>
                     <h1><button class="button-6" onClick={partyExcuse}>Party</button></h1>
