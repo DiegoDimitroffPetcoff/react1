@@ -25,7 +25,7 @@ export function MenuGame() {
     let element = (
         <div class="mean">
             <div class="menu">
-            <div class="GamesList">Lista de Juegos</div>
+            <div class="GamesList">All the games!</div>
             <button class="button-6" onClick={changeExcuseGameState}>Don't You Wanna go?!!</button>
          <p>I hope you can enjoy this app! I wonna try to add soom others games!</p>
             </div>
