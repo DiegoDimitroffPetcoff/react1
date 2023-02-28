@@ -9,19 +9,30 @@ export function MenuGame() {
     }
   };
 
+  const changeHowOldIsYourSould = () => {
+    {
+      SetmainMenu((element = <AgeGame></AgeGame>));
+    }
+  };
+
   let element1 = (
     <button class="button-6" onClick={changeExcuseGameState}>
       Don't You Wanna go?!!
     </button>
   );
 
-  const [gamesMenuStatus, SetgamesMenu] = useState(element1);
+  let element2 = (
+    <button class="button-6" onClick={changeHowOldIsYourSould}>
+      How Old is your sould?
+    </button>
+  );
 
   let element = (
     <div class="mean">
       <div class="menu">
         <div class="GamesList">All the games!</div>
-        {gamesMenuStatus}
+        {element1}
+        {element2}
         <p>
           I hope you can enjoy this app! I wonna try to add soom others games!
         </p>
