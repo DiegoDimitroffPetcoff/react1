@@ -3,26 +3,39 @@ import { ExcuseGame } from "./excuse";
 import { AgeGame } from "./age";
 
 export function MenuGame() {
-
-    const changeExcuseGameState = () => {
-        { SetgamesMenu(element = <ExcuseGame></ExcuseGame>) }
+  const changeExcuseGameState = () => {
+    {
+      SetmainMenu((element = <ExcuseGame></ExcuseGame>));
     }
+  };
 
-    const changeAgeGameState = () => {
-        { SetgamesMenu(
-            <div>
-                Este juego estara pronto dispò
-            </div>
+  let element1 = (
+    <button class="button-6" onClick={changeExcuseGameState}>
+      Don't You Wanna go?!!
+    </button>
+  );
 
-        )}
-    }
+  const [gamesMenuStatus, SetgamesMenu] = useState(element1);
 
+  let element = (
+    <div class="mean">
+      <div class="menu">
+        <div class="GamesList">All the games!</div>
+        {gamesMenuStatus}
+        <p>
+          I hope you can enjoy this app! I wonna try to add soom others games!
+        </p>
+      </div>
+    </div>
+  );
 
-    
+  const [mainMenu, SetmainMenu] = useState(element);
 
-   
+  return <div class="mean">{mainMenu}</div>;
+}
 
-    let element = (
+/** 
+    let element1 = (
         <div class="mean">
             <div class="menu">
             <div class="GamesList">All the games!</div>
@@ -31,20 +44,4 @@ export function MenuGame() {
             </div>
         </div>
     );
-
-
-
-
-    const [gamesMenuStatus, SetgamesMenu] = useState(element)
-   
-
-
-
-    return (
-        <div class="mean">
-            {gamesMenuStatus}
-        </div>
-    )
-
-
-}
+    */
