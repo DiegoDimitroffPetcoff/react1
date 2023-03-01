@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-redundant-roles */
 import { useState } from "react";
 import Axios from "axios";
 
@@ -9,7 +10,7 @@ export function AgeGame() {
     Axios.get(`https://api.agify.io/?name=${name}`).then((res) => {
    let name = res.data.name 
    let age = res.data.age
-Text = <h1 class="ageMessage">Ey {name} your soul age is {age}!!</h1>
+let Text = <h1 class="ageMessage">Ey {name} your soul age is {age}!!</h1>
 
       setAge(Text);
     });
@@ -29,7 +30,7 @@ Text = <h1 class="ageMessage">Ey {name} your soul age is {age}!!</h1>
     
       <button class="button-85" role="button" onClick={fetchData}>Check it!</button>
 
-      <h1>{age}</h1>
+      <h1 class="ageMessage">{age}</h1>
     </div>
   );
 }

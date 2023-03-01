@@ -1,3 +1,4 @@
+/* eslint-disable no-lone-blocks */
 import { useState } from "react";
 import { ExcuseGame } from "./excuse";
 import { AgeGame } from "./age";
