@@ -12,11 +12,11 @@ export function Header() {
         </a>
 
         <nav>
-          <a href="">Home</a>
+          <a href="https://diegodimitroffpetcoff.github.io/Porfolio/index.html">Home</a>
           <a href="https://se.linkedin.com/in/diego-leonardo-vallejos-dimitroff-petcoff-687b0b1b8/en?original_referer=https%3A%2F%2Fwww.google.com%2F">
             About Me
           </a>
-          <a href="">Contact us!</a>
+          <a href="https://diegodimitroffpetcoff.github.io/Porfolio/index.html">Keep in Touch!</a>
         </nav>
       </header>
     </div>
