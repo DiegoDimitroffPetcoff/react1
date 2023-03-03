@@ -475,7 +475,7 @@ p {
     flex-direction:column;
     height: 80%;
     align-self:center;
-    justify-content: end;
+    justify-content: flex-end;
     width: 80%;
     height: 90%;
     overflow: scroll;
