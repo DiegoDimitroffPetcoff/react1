@@ -73,7 +73,7 @@ section div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(95, 225, 225);
+  
   width: 33%;
   justify-content: center;
   border-radius: 3px;
@@ -185,9 +185,10 @@ p {
   align-items: center;
 
   font-size: 30px;
-  background-color: rgba(0, 0, 139, 0.263);
+  background-color: rgba(148, 148, 204, 0.196);
   animation-name: GamesList;
   animation-duration: 2s;
+  color: whitesmoke;
 }
 
 @keyframes GamesList {
@@ -227,7 +228,7 @@ p {
   }
 
   .mean {
-    background-color: rgb(153, 218, 242);
+    background-color: rgb(68 110 110);
     display: flex;
     flex-direction: column;
     margin: auto 0;
@@ -457,4 +458,45 @@ p {
     top: 0;
     border-radius: 10px;
   }
+
+  .mainComments{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    align-items: center;
+  }
+  .boxComments{
+    
+    
+    border-radius:  10px;
+    display:flex;
+    flex-direction:column;
+    height: 80%;
+    align-self:center;
+    justify-content: end;
+    width: 80%;
+    height: 90%;
+    overflow: scroll;
+    
+
+  }
+
+  .comment{    
+    background-color:rgb(118 202 210);    
+    margin: 1px;  
+    border-radius:  5px;  
+    padding: 3px;
+  }
+  .inputMessage{
+    margin: auto 0;
+    height: 40px;
+    width: 90%;
+    border-radius: 15px;
+  }
+
+
+
+
 }
