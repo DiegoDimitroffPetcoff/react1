@@ -11,10 +11,13 @@ a {
 nav a {
   font-weight: 600;
   padding-right: 10px;
+  font-size: 15px;
 }
 
 nav a:hover {
   color: beige;
+  transition: 0.8s;
+  font-size: 20px;
 }
 
 .mean {
@@ -109,6 +112,38 @@ p {
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
   animation-name: changeColor;
   animation-duration: 1s;
+}
+
+h5 {  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(138, 199, 199);
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  box-shadow: rgba(84, 113, 211, 0.04) 0 1px 3px 0;
+}
+
+.documentation{position: absolute;
+  left: 0;
+  top: 10%;}
+
+.documentationsButton{
+  background: none;
+  border: none;
+  font-weight: 600;
+  padding-right: 10px;
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  font-size: 15px;
+  cursor: pointer
+}
+.documentationsButton:hover {
+  color: beige;
+  transition: 0.8s;
+  font-size: 20px;
+ 
 }
 
 .button-6 {
@@ -220,6 +255,54 @@ p {
   }
 }
 
+
+.mainComments{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+  align-items: center;
+}
+.boxComments{
+  
+  
+  border-radius:  10px;
+  display:flex;
+  flex-direction:column;
+  height: 80%;
+  align-self:center;
+  justify-content: flex-end;
+  width: 80%;
+  height: 90%;
+  overflow: scroll;
+  
+
+}
+
+.comment{    
+  background-color:rgb(118 202 210);    
+  margin: 1px;  
+  border-radius:  5px;  
+  padding: 3px;
+}
+.inputMessage{
+  margin: auto 0;
+  height: 40px;
+  width: 90%;
+  border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 700px) {
   .menu {
     display: flex;
@@ -289,6 +372,15 @@ p {
     text-align: center;
     box-shadow: rgba(84, 113, 211, 0.04) 0 1px 3px 0;
   }
+  h5{
+    font-size: 10px
+  }
+  .documentation{position: absolute;
+    left: 0;  
+    top: 14%;
+
+    margin: auto 0;
+    width: 100%;}
 
   .GamesList {
     font-size: 30px;

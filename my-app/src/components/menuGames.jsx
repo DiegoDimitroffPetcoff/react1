@@ -18,7 +18,9 @@ export function MenuGame() {
 
   const changeComments = () => {
     {
-      alert("You Will be able to leave your comment on this page. Using the API tha I build with Nest Js.")
+      alert(
+        "You Will be able to leave your comment on this page. Using the API tha I build with Nest Js."
+      );
       SetmainMenu((element = <Comments></Comments>));
     }
   };
@@ -59,5 +61,3 @@ export function MenuGame() {
 
   return <div class="mean">{mainMenu}</div>;
 }
-
-
