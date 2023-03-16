@@ -3,6 +3,7 @@ import React, { useState } from "react";
 export function Header() {
   const [documentation, setDocumentation] = useState();
 
+
   function showDocumentation() {
     const info = (
       <><h5 className="documentation">
@@ -29,7 +30,8 @@ export function Header() {
       
     }
   }
- 
+
+
 
   return (
     <div>
@@ -53,12 +55,12 @@ export function Header() {
           <a href="https://diegodimitroffpetcoff.github.io/Porfolio/index.html">
             Keep in Touch!
           </a>
-          <a id="login" href="https://diegodimitroffpetcoff.github.io/Porfolio/index.html">
+          <button id="login" className="documentationsButton" onClick={login}>
             Login
-          </a>
-          <a id="signout" href="https://diegodimitroffpetcoff.github.io/Porfolio/index.html">
+          </button>
+          <button id="signout" className="documentationsButton" onClick={showDocumentation}>
             Sing out!
-          </a>
+          </button>
         </nav>
       </header>
     </div>
