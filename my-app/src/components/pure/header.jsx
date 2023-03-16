@@ -53,6 +53,12 @@ export function Header() {
           <a href="https://diegodimitroffpetcoff.github.io/Porfolio/index.html">
             Keep in Touch!
           </a>
+          <a id="login" href="https://diegodimitroffpetcoff.github.io/Porfolio/index.html">
+            Login
+          </a>
+          <a id="signout" href="https://diegodimitroffpetcoff.github.io/Porfolio/index.html">
+            Sing out!
+          </a>
         </nav>
       </header>
     </div>

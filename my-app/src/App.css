@@ -17,7 +17,27 @@ nav a {
 nav a:hover {
   color: beige;
   transition: 0.8s;
-  font-size: 20px;
+
+}
+#login {
+  background-color: rgb(0 0 0 / 15%);
+  padding: 10px;
+  border-radius: 5px;
+  color: whitesmoke;
+  margin: 1px;
+}
+#signout {
+  background-color: rgb(138 199 199 / 64%);
+  padding: 10px;
+  border-radius: 5px;
+  color: whitesmoke;
+  margin: 1px
+}
+#login:hover  {
+color: black
+}
+#signout:hover{
+  color: black
 }
 
 .mean {
@@ -349,8 +369,60 @@ h5 {  display: flex;
   }
 
   nav {
+    display: flex;
     padding-top: 20px;
+    align-items: center;
   }
+  nav a {
+    font-weight: 600;
+    padding: 5px;
+    font-size: 10px;
+  }
+  nav a:hover {
+    color: beige;
+    transition: 0.8s;
+    font-size: 10px;
+    
+  }
+  .documentationsButton{
+    background: none;
+    border: none;
+    font-weight: 600;
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-size: 10px;
+    cursor: pointer
+  }
+  .documentationsButton:hover {
+    color: beige;
+    transition: 0.8s;
+    font-size: 10px;
+   
+  }
+
+  #login {
+    background-color: rgb(0 0 0 / 15%);
+    padding: 10px;
+    border-radius: 5px;
+    color: whitesmoke;
+    margin: 1px;
+  }
+  #signout {
+    background-color: rgb(138 199 199 / 64%);
+    padding: 10px;
+    border-radius: 5px;
+    color: whitesmoke;
+    margin: 1px
+  }
+  #login:hover  {
+color: black
+  }
+  #signout:hover{
+    color: black
+  }
+
 
   #title {
     font-size: 200%;
