@@ -153,10 +153,13 @@ form{
   flex-wrap: wrap;
   height: 300px;
   justify-content: center;
-  transition: 3s;
+  transition: 5s;
+  position: absolute;
+  bottom: 455px;
+  z-index: 1;
 }
 
-form:first-child input{
+form input{
 
   align-items: center;
   display: flex;
@@ -165,6 +168,7 @@ form:first-child input{
   width: 350px;
   padding: 5px;
   margin: 5px;
+  z-index: 1;
 }
 
 
@@ -189,6 +193,23 @@ form:first-child input{
   transition: 0.8s;
 
  
+}
+
+
+.buttonLogin{
+
+  border-radius: 5px;
+  height: 50px;
+  font-size: 25px;
+  width: 200px;
+}
+
+.buttonLogin:hover{
+opacity: 1;
+background-color: #00ffd5;
+transition: 0.8s;
+
+
 }
 
 .button-6 {

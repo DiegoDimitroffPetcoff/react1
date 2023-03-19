@@ -57,7 +57,7 @@ export function MenuGame() {
     </div>
   );
 
-  const [mainMenu, SetmainMenu] = useState(element);
-
+   const [mainMenu, SetmainMenu] = useState(element);
+  
   return <div class="mean">{mainMenu}</div>;
 }

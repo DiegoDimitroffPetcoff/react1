@@ -1,7 +1,12 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
+
+
+
 
 export function Header() {
   const [documentation, setDocumentation] = useState();
+  const [login, setLogin] = useState();
+
 
   function showDocumentation() {
     const info = (
@@ -35,28 +40,42 @@ export function Header() {
     }
   }
 
+
   function loginFunction() {
-    let mainText = document.getElementsByClassName("mean");
-    const loginTemplate = ` <form>  
+    
+    //let mainText = document.getElementsByClassName("mean");
+    let loginTemplate = (<form >
 
-        <div>
-          <input type="text" placeholder="Enter Username" name="username" required>  
-          <input type="password" placeholder="Enter Password" name="password" required>  
-        </div>
-        <div>  
-          <button type="submit">Login</button>   
-          <button  type="button" class="cancelbtn"> Cancel</button>   
-           Forgot <a href="#"> password? </a>  
-        </div>     
+<div>
+  
+    <input type="text" id="nomeid" placeholder="Tiago Vale" required="required" name="nome" />
+  
+    <input type="tel" id="foneid" placeholder="(xx)xx-xx-xx-xx" name="fone" />
+  
+    <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" />
 
-</form>     `;
-    console.log(mainText[0]);
-    mainText[0].innerHTML = loginTemplate;
-    return mainText;
+  
+
+    </div>
+    <div>
+    <input type="submit" class="enviar" onclick={Enviar} value="Enviar" />
+    </div>
+    </form>)
+
+  setLogin(loginTemplate)
+ //   mainText[0].innerHTML = loginTemplate;
+
+
+  
+  }
+
+  function Enviar(params) {
+    console.log("funciona");
   }
 
   return (
     <div>
+
       {" "}
       <header>
         <a href="*" class="logo">
@@ -67,7 +86,7 @@ export function Header() {
 
         <nav>
           {documentation}
-          <button className="documentationsButton" onClick={showDocumentation}>
+          <button className="documentationsButton" onChange={showDocumentation}>
             Documentation
           </button>
 
@@ -84,6 +103,7 @@ export function Header() {
           >
             Login
           </button>
+          {login}
           <button
             id="signout"
             className="documentationsButton"
@@ -91,8 +111,10 @@ export function Header() {
           >
             Sing out!
           </button>
+
         </nav>
       </header>
+    
     </div>
   );
 }
