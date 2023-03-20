@@ -157,6 +157,10 @@ form{
   position: absolute;
   bottom: 455px;
   z-index: 1;
+  left: 20%;
+  right: 20%;
+  top: 20%;
+  button:20%
 }
 
 form input{
@@ -168,7 +172,7 @@ form input{
   width: 350px;
   padding: 5px;
   margin: 5px;
-  z-index: 1;
+
 }
 
 

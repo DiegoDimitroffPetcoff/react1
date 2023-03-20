@@ -1,9 +1,9 @@
 import React, { Fragment, useState } from "react";
+import { Form } from "./form";
 
 export function Header() {
   const [documentation, setDocumentation] = useState();
   const [login, setLogin] = useState();
-  const [data, setData] = useState({ name: "", password: "" });
 
   function showDocumentation() {
     const info = (
@@ -37,35 +37,12 @@ export function Header() {
     }
   }
 
-  const Enviar = (event) => {
-    console.log(event.target.value);
-    console.log(data.name);
-    setData({
-      ...data,
-      [event.target.name]: event.target.value,
-    });
-  };
-
-  let loginTemplate = (
-    <form onClick={Enviar}>
-  
-        <input type="text" placeholder="Name" required="required" name="name" />
-
-        <input type="tel" placeholder="Password" name="password" />
- 
-        <button type="submit" value="Enviar" />
- 
-    </form>
-  );
-
   function loginFunction() {
-    setLogin(loginTemplate);
-    //   mainText[0].innerHTML = loginTemplate;
+    setLogin(<Form></Form>);
   }
 
   return (
     <div>
-      {" "}
       <header>
         <a href="*" className="logo">
           <h2>Dimi Games</h2>
@@ -93,7 +70,6 @@ export function Header() {
             Login
           </button>
           {login}
-      
           <button
             id="signout"
             className="documentationsButton"
@@ -103,16 +79,6 @@ export function Header() {
           </button>
         </nav>
       </header>
-   
-      <form onClick={Enviar}>
-  
-  <input type="text" placeholder="Name" required="required" name="name" />
-
-  <input type="tel" placeholder="Password" name="password" />
-
-  <input type="submit" value="Enviar" />
-
-</form>
     </div>
   );
 }
