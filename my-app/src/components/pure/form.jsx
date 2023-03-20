@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Axios from "axios";
 
 
 
@@ -25,7 +25,17 @@ const HandleFormChange =(event) => {
     event.preventDefault()
     console.log(data)
 
-}
+
+    Axios.post(`https://backendlogin.onrender.com/login`, {      
+      username: data.name,
+      password: data.password
+    }).then(async (res) => {
+     console.log(res);
+    });
+  };
+
+
+
 
 
 
