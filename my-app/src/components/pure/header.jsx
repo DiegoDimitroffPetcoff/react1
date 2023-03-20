@@ -1,12 +1,9 @@
 import React, { Fragment, useState } from "react";
 
-
-
-
 export function Header() {
   const [documentation, setDocumentation] = useState();
   const [login, setLogin] = useState();
-
+  const [data, setData] = useState({ name: "", password: "" });
 
   function showDocumentation() {
     const info = (
@@ -28,7 +25,7 @@ export function Header() {
           time... if not, it is activated before the requests, taking a few
           seconds before the first request and obtaining normal operation
           subsequently. <br></br>
-          <button class="button-6" onClick={closeInfo}>
+          <button className="button-6" onClick={closeInfo}>
             Close
           </button>
         </h5>
@@ -40,45 +37,37 @@ export function Header() {
     }
   }
 
+  const Enviar = (event) => {
+    console.log(event.target.value);
+    console.log(data.name);
+    setData({
+      ...data,
+      [event.target.name]: event.target.value,
+    });
+  };
+
+  let loginTemplate = (
+    <form onClick={Enviar}>
+  
+        <input type="text" placeholder="Name" required="required" name="name" />
+
+        <input type="tel" placeholder="Password" name="password" />
+ 
+        <button type="submit" value="Enviar" />
+ 
+    </form>
+  );
 
   function loginFunction() {
-    
-    //let mainText = document.getElementsByClassName("mean");
-    let loginTemplate = (<form >
-
-<div>
-  
-    <input type="text" id="nomeid" placeholder="Tiago Vale" required="required" name="nome" />
-  
-    <input type="tel" id="foneid" placeholder="(xx)xx-xx-xx-xx" name="fone" />
-  
-    <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" />
-
-  
-
-    </div>
-    <div>
-    <input type="submit" class="enviar" onclick={Enviar} value="Enviar" />
-    </div>
-    </form>)
-
-  setLogin(loginTemplate)
- //   mainText[0].innerHTML = loginTemplate;
-
-
-  
-  }
-
-  function Enviar(params) {
-    console.log("funciona");
+    setLogin(loginTemplate);
+    //   mainText[0].innerHTML = loginTemplate;
   }
 
   return (
     <div>
-
       {" "}
       <header>
-        <a href="*" class="logo">
+        <a href="*" className="logo">
           <h2>Dimi Games</h2>
 
           <h6>Never stop</h6>
@@ -104,6 +93,7 @@ export function Header() {
             Login
           </button>
           {login}
+      
           <button
             id="signout"
             className="documentationsButton"
@@ -111,10 +101,18 @@ export function Header() {
           >
             Sing out!
           </button>
-
         </nav>
       </header>
-    
+   
+      <form onClick={Enviar}>
+  
+  <input type="text" placeholder="Name" required="required" name="name" />
+
+  <input type="tel" placeholder="Password" name="password" />
+
+  <input type="submit" value="Enviar" />
+
+</form>
     </div>
   );
 }

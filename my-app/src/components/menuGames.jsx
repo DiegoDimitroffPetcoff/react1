@@ -26,27 +26,27 @@ export function MenuGame() {
   };
 
   let element1 = (
-    <button class="button-6" onClick={changeExcuseGameState}>
+    <button className="button-6" onClick={changeExcuseGameState}>
       Don't You Wanna go?!!
     </button>
   );
 
   let element2 = (
-    <button class="button-6" onClick={changeHowOldIsYourSould}>
+    <button className="button-6" onClick={changeHowOldIsYourSould}>
       How Old is your sould?
     </button>
   );
 
   let element3 = (
-    <button class="button-6" onClick={changeComments}>
+    <button className="button-6" onClick={changeComments}>
       Leave a Comment!
     </button>
   );
 
   let element = (
-    <div class="mean">
-      <div class="menu">
-        <div class="GamesList">All the games!</div>
+    <div className="mean">
+      <div className="menu">
+        <div className="GamesList">All the games!</div>
         {element1}
         {element2}
         {element3}
@@ -59,5 +59,5 @@ export function MenuGame() {
 
    const [mainMenu, SetmainMenu] = useState(element);
   
-  return <div class="mean">{mainMenu}</div>;
+  return <div className="mean">{mainMenu}</div>;
 }
