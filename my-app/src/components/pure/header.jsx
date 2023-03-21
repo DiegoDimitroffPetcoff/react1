@@ -1,7 +1,7 @@
-import React, { Fragment, useState } from "react";
+import React from "react";
 
 import { Link,   Outlet } from "react-router-dom";
-import { MenuGame } from "../../components/menuGames";
+
 
 import { Footer } from "../../components/pure/footer";
 

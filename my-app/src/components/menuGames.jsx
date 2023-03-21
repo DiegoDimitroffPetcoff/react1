@@ -3,7 +3,7 @@ import { useState } from "react";
 import { ExcuseGame } from "./excuse";
 import { AgeGame } from "./age";
 import { Comments } from "./comments";
-import { Outlet } from "react-router-dom";
+
 
 export function MenuGame() {
   const changeExcuseGameState = () => {
