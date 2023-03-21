@@ -3,6 +3,8 @@ import { useState } from "react";
 import { ExcuseGame } from "./excuse";
 import { AgeGame } from "./age";
 import { Comments } from "./comments";
+import { Outlet } from "react-router-dom";
+
 export function MenuGame() {
   const changeExcuseGameState = () => {
     {
@@ -44,20 +46,18 @@ export function MenuGame() {
   );
 
   let element = (
-    <div className="mean">
-      <div className="menu">
-        <div className="GamesList">All the games!</div>
-        {element1}
-        {element2}
-        {element3}
-        <p>
-          I hope you can enjoy this app! I wonna try to add soom others games!
-        </p>
-      </div>
+    <div className="menu">
+      <div className="GamesList">All the games!</div>
+      {element1}
+      {element2}
+      {element3}
+      <p>
+        I hope you can enjoy this app! I wonna try to add soom others games!
+      </p>
     </div>
   );
 
-   const [mainMenu, SetmainMenu] = useState(element);
-  
+  const [mainMenu, SetmainMenu] = useState(element);
+
   return <div className="mean">{mainMenu}</div>;
 }
