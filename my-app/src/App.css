@@ -17,7 +17,6 @@ nav a {
 nav a:hover {
   color: beige;
   transition: 0.8s;
-
 }
 #login {
   background-color: rgb(0 0 0 / 15%);
@@ -31,13 +30,13 @@ nav a:hover {
   padding: 10px;
   border-radius: 5px;
   color: whitesmoke;
-  margin: 1px
+  margin: 1px;
 }
-#login:hover  {
-color: black
+#login:hover {
+  color: black;
 }
-#signout:hover{
-  color: black
+#signout:hover {
+  color: black;
 }
 
 .mean {
@@ -96,7 +95,7 @@ section div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   width: 33%;
   justify-content: center;
   border-radius: 3px;
@@ -134,17 +133,21 @@ p {
   animation-duration: 1s;
 }
 
-h5 {  display: flex;
+h5 {
+  display: flex;
   flex-direction: column;
   align-items: center;
   background-color: rgb(138, 199, 199);
-  width: 100%;
+
   justify-content: center;
   text-align: center;
   box-shadow: rgba(84, 113, 211, 0.04) 0 1px 3px 0;
+
+  padding: 20px;
+  margin: 0;
 }
 
-form{
+form {
   background-color: rgb(0 0 0 / 10%);
   display: flex;
   flex-direction: column;
@@ -154,17 +157,16 @@ form{
   height: 300px;
   justify-content: center;
   transition: 5s;
-  position: absolute;
+
   bottom: 455px;
   z-index: 1;
   left: 20%;
   right: 20%;
   top: 20%;
-  button:20%
+  button: 20%;
 }
 
-form input{
-
+form input {
   align-items: center;
   display: flex;
   border-radius: 6px;
@@ -172,16 +174,14 @@ form input{
   width: 350px;
   padding: 5px;
   margin: 5px;
-
 }
 
-
-
-.documentation{position: absolute;
+.documentation {
   left: 0;
-  top: 10%;}
+  top: 10%;
+}
 
-.documentationsButton{
+.documentationsButton {
   background: none;
   border: none;
   font-weight: 600;
@@ -190,30 +190,24 @@ form input{
   color: black;
   font-family: sans-serif;
   font-size: 15px;
-  cursor: pointer
+  cursor: pointer;
 }
 .documentationsButton:hover {
   color: beige;
   transition: 0.8s;
-
- 
 }
 
-
-.buttonLogin{
-
+.buttonLogin {
   border-radius: 5px;
   height: 50px;
   font-size: 25px;
   width: 200px;
 }
 
-.buttonLogin:hover{
-opacity: 1;
-background-color: #00ffd5;
-transition: 0.8s;
-
-
+.buttonLogin:hover {
+  opacity: 1;
+  background-color: #00ffd5;
+  transition: 0.8s;
 }
 
 .button-6 {
@@ -325,8 +319,7 @@ transition: 0.8s;
   }
 }
 
-
-.mainComments{
+.mainComments {
   width: 100%;
   height: 100%;
   display: flex;
@@ -334,45 +327,32 @@ transition: 0.8s;
   margin: auto 0;
   align-items: center;
 }
-.boxComments{
-  
-  
-  border-radius:  10px;
-  display:flex;
-  flex-direction:column;
+.boxComments {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
   height: 80%;
-  align-self:center;
+  align-self: center;
   justify-content: flex-end;
   width: 80%;
   height: 90%;
   overflow: scroll;
-  
-
 }
 
-.comment{    
-  background-color:rgb(118 202 210);    
-  margin: 1px;  
-  border-radius:  5px;  
+.comment {
+  background-color: rgb(118 202 210);
+  margin: 1px;
+  border-radius: 5px;
   padding: 3px;
 }
-.inputMessage{
+.inputMessage {
   margin: auto 0;
   height: 40px;
   width: 90%;
   border-radius: 15px;
 }
 
-
-
-
-
-
 /**----------------------------------------------------------**/
-
-
-
-
 
 @media (max-width: 700px) {
   .menu {
@@ -433,9 +413,8 @@ transition: 0.8s;
     color: beige;
     transition: 0.8s;
     font-size: 10px;
-    
   }
-  .documentationsButton{
+  .documentationsButton {
     background: none;
     border: none;
     font-weight: 600;
@@ -444,13 +423,12 @@ transition: 0.8s;
     color: black;
     font-family: sans-serif;
     font-size: 10px;
-    cursor: pointer
+    cursor: pointer;
   }
   .documentationsButton:hover {
     color: beige;
     transition: 0.8s;
     font-size: 10px;
-   
   }
 
   #login {
@@ -465,15 +443,14 @@ transition: 0.8s;
     padding: 10px;
     border-radius: 5px;
     color: whitesmoke;
-    margin: 1px
+    margin: 1px;
   }
-  #login:hover  {
-color: black
+  #login:hover {
+    color: black;
   }
-  #signout:hover{
-    color: black
+  #signout:hover {
+    color: black;
   }
-
 
   #title {
     font-size: 200%;
@@ -495,15 +472,15 @@ color: black
     text-align: center;
     box-shadow: rgba(84, 113, 211, 0.04) 0 1px 3px 0;
   }
-  h5{
-    font-size: 10px
+  h5 {
+    font-size: 10px;
   }
-  .documentation{position: absolute;
-    left: 0;  
+  .documentation {
+    left: 0;
     top: 14%;
-
+    height:550px;
     margin: auto 0;
-    width: 100%;}
+  }
 
   .GamesList {
     font-size: 30px;
@@ -590,8 +567,7 @@ color: black
     border-radius: 50%;
     border-radius: 10px;
     animation-name: backAgeMessage;
-    transition-duration:  2s;
-   
+    transition-duration: 2s;
   }
 
   @keyframes backAgeMessage {
@@ -604,7 +580,6 @@ color: black
     100% {
       background-position: 0 0;
     }
-
   }
 
   .button-85 {
@@ -674,7 +649,7 @@ color: black
     border-radius: 10px;
   }
 
-  .mainComments{
+  .mainComments {
     width: 100%;
     height: 100%;
     display: flex;
@@ -682,36 +657,28 @@ color: black
     margin: auto 0;
     align-items: center;
   }
-  .boxComments{
-    
-    
-    border-radius:  10px;
-    display:flex;
-    flex-direction:column;
+  .boxComments {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
     height: 80%;
-    align-self:center;
+    align-self: center;
     justify-content: flex-end;
     width: 80%;
     height: 90%;
     overflow: scroll;
-    
-
   }
 
-  .comment{    
-    background-color:rgb(118 202 210);    
-    margin: 1px;  
-    border-radius:  5px;  
+  .comment {
+    background-color: rgb(118 202 210);
+    margin: 1px;
+    border-radius: 5px;
     padding: 3px;
   }
-  .inputMessage{
+  .inputMessage {
     margin: auto 0;
     height: 40px;
     width: 90%;
     border-radius: 15px;
   }
-
-
-
-
 }
