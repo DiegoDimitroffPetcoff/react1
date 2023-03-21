@@ -1,17 +1,19 @@
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Outlet ,Routes, Route } from "react-router-dom";
 
-import { Home } from "./components/pure/home";
+import Home from "./components/pure/home";
 
 function App() {
   return (
-    <BrowserRouter>
+    <div>
+      <h1>Routes</h1>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />}>
+          <Route path="/" element={<Home />} />
+        </Route>
       </Routes>
-
-      <Home></Home>
-    </BrowserRouter>
+      <Outlet></Outlet>
+    </div>
   );
 }
 

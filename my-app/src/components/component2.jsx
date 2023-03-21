@@ -8,6 +8,7 @@ export function component2(params) {
     return(
         <div>
             desde el component2 
+            component2
         </div>
     )
     
