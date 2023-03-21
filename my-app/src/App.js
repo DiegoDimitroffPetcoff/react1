@@ -1,16 +1,17 @@
 import "./App.css";
-import { MenuGame } from "./components/menuGames";
-import { Header } from "./components/pure/header";
-import { Footer } from "./components/pure/footer";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+import { Home } from "./components/pure/home";
 
 function App() {
   return (
-    <div>
-      <Header></Header>
-      <MenuGame></MenuGame>
-      <Footer></Footer>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+
+      <Home></Home>
+    </BrowserRouter>
   );
 }
 

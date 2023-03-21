@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import Axios from "axios";
+import React, { useState, useHistory } from "react";
+import axios from "axios";
+
 
 
 
@@ -21,17 +22,20 @@ setData({
 })
 }
 
-const HandleFormChange =(event) => {
+const HandleFormChange =async (event) => {
     event.preventDefault()
-    console.log(data)
 
+try {
+  await axios.post(`https://backendlogin.onrender.com/login`, {      
+    username: data.name,
+    password: data.password
+  });
+  useHistory.push("/login")
+} catch (error) {
+  console.log("SE PRODUJO UN ERROR")
+  console.log(error)
+}
 
-    Axios.post(`https://backendlogin.onrender.com/login`, {      
-      username: data.name,
-      password: data.password
-    }).then(async (res) => {
-     console.log(res);
-    });
   };
 
 
