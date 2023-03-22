@@ -1,4 +1,4 @@
-import React, { useState, useHistory } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 
 
@@ -9,7 +9,7 @@ export function Form() {
     name: "",
     password: "",
   });
-
+const [log, setLog]= useState()
 const  HandleInputChange =(event) =>{
 
 setData({
@@ -29,8 +29,11 @@ try {
   await axios.post(`https://backendlogin.onrender.com/login`, {      
     username: data.name,
     password: data.password
-  });
-  useHistory.push("/login")
+  }).then(function (response) {
+    console.log(response.data);
+    setLog(response.data)
+  })
+
 } catch (error) {
   console.log("SE PRODUJO UN ERROR")
   console.log(error)
@@ -51,6 +54,7 @@ try {
         <input placeholder="Password" type="password" name="password"  onChange={HandleInputChange}></input>
         <button type="Submit" >Enviar</button>
       </form>
+      {log}
     </div>
   );
 }

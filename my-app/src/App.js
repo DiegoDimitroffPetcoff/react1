@@ -6,6 +6,7 @@ import {Form} from "./components/pure/form";
 import {Signout} from "./components/pure/signout";
 import {Documentation} from "./components/pure/documentation";
 import { MenuGame } from "./components/menuGames";
+import { LoginSuccess } from "./components/auth/Login success";
 
 
 
@@ -18,7 +19,9 @@ function App() {
           <Route path="/login" element={<Form />} />
           <Route path="/" element={<MenuGame />} />       
           <Route path="/signout" element={<Signout />} />
-          <Route path="/documentation" element={<Documentation />} />   
+          <Route path="/documentation" element={<Documentation />} />
+          <Route path="/LoginSuccess" element={<LoginSuccess />} />
+             
       
         </Route>
       </Routes>
