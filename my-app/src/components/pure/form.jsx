@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+import {  useNavigate  } from "react-router-dom";
+
 
 
 
@@ -9,7 +11,8 @@ export function Form() {
     name: "",
     password: "",
   });
-const [log, setLog]= useState()
+  const Navigate = useNavigate()
+
 const  HandleInputChange =(event) =>{
 
 setData({
@@ -29,9 +32,11 @@ try {
   await axios.post(`https://backendlogin.onrender.com/login`, {      
     username: data.name,
     password: data.password
-  }).then(function (response) {
-    console.log(response.data);
-    setLog(response.data)
+  })
+  .then(function (response) {
+    console.log(response);
+    Navigate("logged")  
+    
   })
 
 } catch (error) {

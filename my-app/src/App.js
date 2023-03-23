@@ -19,9 +19,8 @@ function App() {
           <Route path="/login" element={<Form />} />
           <Route path="/" element={<MenuGame />} />       
           <Route path="/signout" element={<Signout />} />
-          <Route path="/documentation" element={<Documentation />} />
-          <Route path="/LoginSuccess" element={<LoginSuccess />} />
-             
+          <Route path="/documentation" element={<Documentation />} />   
+          <Route path="/login/logged" element={<Documentation />} /> 
       
         </Route>
       </Routes>
