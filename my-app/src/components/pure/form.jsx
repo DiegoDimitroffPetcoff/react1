@@ -1,5 +1,7 @@
-import React, { useState, useHistory } from "react";
+import React, { useState } from "react";
 import axios from "axios";
+import {  useNavigate  } from "react-router-dom";
+
 
 
 
@@ -9,6 +11,7 @@ export function Form() {
     name: "",
     password: "",
   });
+  const Navigate = useNavigate()
 
 const  HandleInputChange =(event) =>{
 
@@ -29,8 +32,13 @@ try {
   await axios.post(`https://backendlogin.onrender.com/login`, {      
     username: data.name,
     password: data.password
-  });
-  useHistory.push("/login")
+  })
+  .then(function (response) {
+    console.log(response);
+    Navigate("logged")  
+    
+  })
+
 } catch (error) {
   console.log("SE PRODUJO UN ERROR")
   console.log(error)

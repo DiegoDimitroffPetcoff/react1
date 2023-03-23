@@ -1,4 +1,4 @@
-import {useContext, useState} from "react"
+import {useContext} from "react"
 
 
 export function Component1(sessionData) {
@@ -9,7 +9,7 @@ export function Component1(sessionData) {
     return(
         <div>
         
-            desde el component1 
+            LOGIN CORRETO
             {state}
         </div>
     )

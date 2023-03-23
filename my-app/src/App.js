@@ -19,6 +19,7 @@ function App() {
           <Route path="/" element={<MenuGame />} />       
           <Route path="/signout" element={<Signout />} />
           <Route path="/documentation" element={<Documentation />} />   
+          <Route path="/login/logged" element={<Documentation />} /> 
       
         </Route>
       </Routes>
