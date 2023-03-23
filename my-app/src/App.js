@@ -6,6 +6,7 @@ import {Form} from "./components/pure/form";
 import {Signout} from "./components/pure/signout";
 import {Documentation} from "./components/pure/documentation";
 import { MenuGame } from "./components/menuGames";
+import { LoginSuccess } from "./components/auth/Login success";
 
 
 

@@ -59,6 +59,7 @@ try {
         <input placeholder="Password" type="password" name="password"  onChange={HandleInputChange}></input>
         <button type="Submit" >Enviar</button>
       </form>
+      {log}
     </div>
   );
 }
