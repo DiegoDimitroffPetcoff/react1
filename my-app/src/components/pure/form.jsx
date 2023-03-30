@@ -24,7 +24,7 @@ export function Login() {
                 Navigate("/loginfail");
               } else {
                 console.log(response.data);
-                Navigate("loginsuccess", data.username);
+                Navigate("loginsuccess", data);
               }
             });
         }}
