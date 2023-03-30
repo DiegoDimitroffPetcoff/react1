@@ -31,11 +31,11 @@ export function Login() {
       >
         {({ isSubmitting }) => (
           <Form>
-            <label htmlFor="name">Name</label>
+            
 
-            <Field id="name" name="name" placeholder="Your Name" />
+            <Field id="name" name="name" placeholder="Your Username" />
 
-            <label htmlFor="pasword">Password</label>
+            
             <Field
               id="pasword"
               type="password"
@@ -43,7 +43,7 @@ export function Login() {
               placeholder="Pasword"
             />
 
-            <label htmlFor="email">Email</label>
+            
 
             <button type="submit">Login</button>
             {isSubmitting ? <p>Loading</p> : null}

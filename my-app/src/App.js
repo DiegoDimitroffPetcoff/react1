@@ -23,6 +23,7 @@ function App() {
           <Route path="/signout" element={<Signout />} />
           <Route path="/documentation" element={<Documentation />} />
           <Route path="/login/loginsuccess" element={<LoginSuccess />} />
+          <Route path="/signout/loginsuccess" element={<LoginSuccess />} />
           <Route path="/loginfail" element={<Loginfail />} />
           <Route path="/test" element={<Test/>} />
         </Route>
