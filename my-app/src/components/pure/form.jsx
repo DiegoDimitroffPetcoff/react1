@@ -10,8 +10,8 @@ export function Login() {
   const initialValues = { name: "", password: "" };
 
   return (
-    <div>
-      <h1>Sign Up</h1>
+    <div >
+   
       <Formik
         initialValues={initialValues}
         onSubmit={async (data) => {

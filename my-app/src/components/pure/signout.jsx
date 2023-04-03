@@ -17,7 +17,7 @@ export function Signout() {
 
   return (
     <div>
-      <h1>Sign Up</h1>
+      
       <Formik
         initialValues={initialValues}
         onSubmit={async (data) => {
