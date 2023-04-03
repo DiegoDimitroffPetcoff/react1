@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { Formik, Field, Form } from "formik";
 
 export function Login() {
   const Navigate = useNavigate();
-  const [logged, setLogged] = useState(false);
-  const [user, setUser] = useState();
+
   const initialValues = { name: "", password: "" };
 
   return (
