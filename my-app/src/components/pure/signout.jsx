@@ -36,6 +36,7 @@ export function Signout() {
                 Navigate("/loginfail");
               } else {
                 console.log(response.data);
+                sessionStorage.setItem("user", JSON.stringify(response));
                 Navigate("loginsuccess", data.username);
               }
             });

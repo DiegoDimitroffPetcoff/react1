@@ -40,7 +40,7 @@ export function Login() {
               id="pasword"
               type="password"
               name="password"
-              placeholder="Pasword"
+              placeholder="Password"
             />
 
             <button type="submit">Login</button>
