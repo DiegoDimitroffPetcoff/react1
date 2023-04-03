@@ -23,7 +23,7 @@ export function Signout() {
         onSubmit={async (data) => {
           console.log(data)
           await axios
-            .post(`https://backendlogin.onrender.com/signout`, {
+            .post(`https://backendlogin.onrender.com/signout/`, {
               username: data.name,
               password: data.password,
               email: data.email,
