@@ -5,7 +5,7 @@ import axios from "axios";
 export  function Test() {
 console.log("si");
 
-  axios.get('http://localhost:3000/test')
+  axios.get('http://backendlogin.onrender.com/test')
   .then(function (response) {
     // handle success
     console.log(response);
